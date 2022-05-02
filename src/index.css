@@ -1,13 +1,310 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container-bg{
+  width: 90%;
+  margin:0 auto;
+}
+.container-sm{
+  width: 60%;
+  margin:0 auto;
+}
+.container-mc{
+  width: 40%;
+  margin:0 auto;
+}
+.hide{
+  visibility:hidden;
+}
+a{
+  color:black;
+}
+p{
+  margin-top:0;
+}
+header{
+  border-bottom: 1px solid lightgray;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 26px;
+  display: block;
+}
+.header-shop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-shop ul{
+  display:flex;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container{
+  height: 100px;
+}
+.header-shop .nav li:nth-child(1n){
+  margin-right: 2.5rem;
+}
+.header-shop .nav li:last-child{
+  margin-right: 0;
+}
+.group-icons svg{
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.Shop h1{
+  font-weight: 600;
+  font-size: 40px;
+  margin:4rem 0;
+}
+.Basket .logo{
+  font-size: 20px;
+}
+.Basket{
+  display:flex;
+  align-items: center;
+  position:relative;
+  justify-content: space-between;
+}
+.header-basket{
+  padding:1rem 0;
+  border:0;
+}
+.Basket span:nth-child(2){
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+.Basket div{
+  float: right;
+}
+.basket-empty{
+  font-size: 25px;
+}
+.EmptyBasket .continue{
+  text-decoration: underline;
+}
+.BasketMain .continue a{
+  padding:1rem
+}
+.Shop main{
+  display: grid;
+  gap:5rem;
+  grid-template-columns: 1fr 1fr;
+}
+.SingleItem{
+  font-size: 20px;
+  font-weight: 300;
+}
+.SingleItem img{
+  width: 100%;
+  height: auto;
+}
+.img-container{
+  width: 100%;
+  height: 37rem;
+  background-color: #F4F4F4;
+  position:relative
+}
+.SingleProduct .img-container{
+  background-color: white;
+  height: 45rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.img-container img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 20rem;
+  width: auto;
+}
+.SingleItem .description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SingleItem h5{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 9rem;
+  height: 9rem;
+  margin:0 auto;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.SingleProduct{
+  display: flex;
+  margin-top:4rem
+}
+.SingleProduct .price{
+  font-size:40px;
+  font-weight: 400;
+}
+.SingleProduct .description{
+  padding:0 3rem;
+  flex-shrink: 1.5;
+}
+.SingleProduct h1{
+  font-weight: 600;
+}
+.btn{
+  display: block;
+  width: 100%;
+  border:none;
+  border-radius: 30px;
+  background-color: black;
+  color:white;
+  font-weight: 400;
+  font-size: 20px;
+  height: auto;
+  margin-top:2rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding:0.6rem 0;
+}
+.btn:hover{
+  background-color: black;
+}
+.SingleProduct button:hover{
+  opacity: 0.7;
+}
+.BasketMain{
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+}
+.BasketItem{
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+.BasketItem .options div{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.BasketItem .options div:last-child{
+  align-items: flex-end;
+}
+.BasketItem select{
+  border:1px solid lightgray;
+}
+.BasketItem label{
+  color:black
+}
+.BasketItem button{
+  display: flex;
+  border:none;
+  background: none;
+  cursor: pointer;
+}
+.BasketItem button svg{
+  margin-right: 0.3rem;
+}
+.cart-svg{
+  position:relative;
+}
+#modal-append{
+  position:absolute;
+  top:2.5rem;
+  left:-9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1.5rem;
+  background-color: #F4F4F4;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+#modal-append span{
+  display: block;
+}
+#modal-append button{
+  padding:0;
+  margin-top:1rem;
+}
+#modal-append button:hover{
+  background-color: black;
+}
+#modal-append::before{
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: #F4F4F4;
+  transform:rotate(45deg);
+  position: absolute;
+  top:-0.5rem;
+  right: 1.5rem;
+}
+.checkout{
+  border:1px solid lightgray;
+  padding:1rem;
+}
+.checkout .fl{
+  display: flex;
+  justify-content: space-between;
+}
+.checkout>div{
+  padding:0.6rem 0;
+  border-bottom: 1px solid lightgray;
+}
+.checkout>div:last-of-type{
+  padding:0.6rem 0;
+  border:0;
+}
+.checkout .btn{
+  border-radius: 0;
+  margin-top:0.5rem
+}
+.checkout .btn:hover{
+  background-color: red;
 }

@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Roam",
+      "img": "https://media.sonos.com//images/znqtjj88/production/cc43a8c1c4adf642db405762620b3a8b7618fda2-854x2337.png?w=1080&q=75&fit=clip&auto=format",
+      "description": "Ultra Portable Smart Speaker",
+      "price": 199
+    },
+    {
+      "id": 2,
+      "title": "Roam SL",
+      "img": "https://media.sonos.com//images/znqtjj88/production/7bb2cc80f3d1366b71ccea4d2676d2d74da1c07b-854x2337.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 179,
+      "description": "Ultra Portable Speaker"
+    },
+    {
+      "id": 3,
+      "title": "Arc",
+      "img": "https://media.sonos.com//images/znqtjj88/production/bee9786c756c4e4cbd55c9902b484ffb15e008ea-3331x2257.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 999,
+      "description": "Premium Smart Soundbar"
+    },
+    {
+      "id": 4,
+      "title": "Five",
+      "img": "https://media.sonos.com//images/znqtjj88/production/91842eaeee11508a3d1278a7a204fb940f14b84f-2705x2656.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 599,
+      "description": "Premium Speaker"
+    },
+    {
+      "id": 5,
+      "title": "Sub (Gen 3)",
+      "img": "https://media.sonos.com//images/znqtjj88/production/dd84c5bf5558b003741f581041b88c01843fad31-2328x3076.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 849,
+      "description": "Premium Wireless Subwoofer"
+    },
+    {
+      "id": 6,
+      "title": "Move",
+      "img": "https://media.sonos.com//images/znqtjj88/production/6c34ae71575f76e7eb846e3ae500c2d8702da0b9-1516x2656.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 399,
+      "description": "Portable Smart Speaker"
+    },
+    {
+      "id": 7,
+      "title": "One",
+      "img": "https://media.sonos.com//images/znqtjj88/production/259264439eb0130b7b202a33869fcee50784e402-1514x2232.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 229,
+      "description": "Smart Speaker"
+    },
+    {
+      "id": 8,
+      "title": "One SL",
+      "img": "https://media.sonos.com//images/znqtjj88/production/2bed1486631e3c2a034394b7d34d3ab9685766e9-1476x2236.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 199,
+      "description": "Speaker"
+    },
+    {
+      "id": 9,
+      "title": "Beam (Gen 2)",
+      "img": "https://media.sonos.com//images/znqtjj88/production/c79156fe93547d1b0a993dc1fb7b381d8773737a-3000x1834.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 499,
+      "description": "Smart Soundbar"
+    },
+    {
+      "id": 10,
+      "title": "Port",
+      "img": "https://media.sonos.com//images/znqtjj88/production/4fd4d1a87ea11c43caf99a1b60404966f927dfa4-2167x1627.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 449,
+      "description": "Network Audio Streamer"
+    }
+  ],
+  "basket-products": [
+    {
+      "id": 2,
+      "title": "Roam SL",
+      "img": "https://media.sonos.com//images/znqtjj88/production/7bb2cc80f3d1366b71ccea4d2676d2d74da1c07b-854x2337.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 179,
+      "description": "Ultra Portable Speaker",
+      "quantity": "3"
+    },
+    {
+      "id": 8,
+      "title": "One SL",
+      "img": "https://media.sonos.com//images/znqtjj88/production/2bed1486631e3c2a034394b7d34d3ab9685766e9-1476x2236.png?w=1080&q=75&fit=clip&auto=format",
+      "price": 199,
+      "description": "Speaker",
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "title": "Sub (Gen 3)",
+      "img": "https://media.sonos.com//images/znqtjj88/production/dd84c5bf5558b003741f581041b88c01843fad31-2328x3076.png?w=1920&q=75&fit=clip&auto=format",
+      "price": 849,
+      "description": "Premium Wireless Subwoofer",
+      "quantity": 1
+    }
+  ]
+}

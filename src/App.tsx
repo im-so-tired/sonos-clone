@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Basket } from "./Pages/Basket";
+import { Main } from "./Pages/Main";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { NotFound } from "./Pages/NotFound";
+import { SinglePage } from "./Pages/SinlePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/shop" element={<Main />}></Route>
+          <Route path="/cart" element={<Basket />}></Route>
+          <Route path="/" element={<Navigate to="/shop" replace />} />
+          <Route path="/shop/:id" element={<SinglePage></SinglePage>}></Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
