@@ -134,7 +134,7 @@ header{
 .SingleItem .description{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 .SingleItem h5{
   font-size: 40px;
@@ -307,4 +307,114 @@ header{
 }
 .checkout .btn:hover{
   background-color: red;
+}
+main a:nth-child(1n) img{
+  height: auto;
+  width: 80%;
+}
+main a:nth-child(5) img,main a:nth-child(6) img,main a:nth-child(7) img,main a:nth-child(8) img{
+  height: auto;
+  width: 55%;
+}
+main a:nth-child(1) img,main a:nth-child(2) img{
+  height: 80%;
+  width: auto;
+}
+.burger{
+  display: none;
+}
+.hidden{
+  display: none !important;;
+}
+
+@media screen and (max-width: 1200px) {
+  .img-container img{
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  
+}
+@media screen and (max-width: 991px) {
+  .Shop main{
+    grid-template-columns: 1fr;
+  }
+  main a:nth-child(6) img,main a:nth-child(7) img,main a:nth-child(8) img {
+    height: auto;
+    width: 65%;
+  }
+  .modal-menu{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-shop ul:nth-child(2){
+    display: none;
+  }
+  .container-bg{
+    width: 100%;
+    padding:0 2rem;
+  }
+  .header-shop{
+    justify-content: flex-start;
+    position:relative;
+    z-index: 4;
+    background-color: white;
+  }
+  .burger{
+    display: block;
+    height: 35px;
+    width: 35px;
+    margin-left: auto;
+  }
+  .group-icons{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+  }
+  .burger svg{
+   height: 100%;
+   width: 100%;
+  }
+  .container-sm {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .modal-menu{
+    display: block;
+    position:absolute;
+    top: 100px;
+    left:0;
+    right: 0;
+    animation-name: menuMoving;
+    animation-duration: 1.5s;
+    z-index: 3;
+  }
+  @keyframes menuMoving {
+    from {
+      top:0;
+    }
+  
+    to {
+      top:100px;
+    }
+  }
+  .modal-menu .nav{
+    display: flex;
+    flex-direction:column;
+    margin: 0;
+    z-index: -2;
+  }
+  .modal-menu .nav .flex-container:nth-child(1n){
+    margin:0;
+    padding:0.5rem 0;
+    width: 100%;
+    background-color: #F4F4F4;
+  }
+  
+}
+@media screen and (max-width: 575px) {
+  
 }

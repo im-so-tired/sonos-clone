@@ -87,14 +87,6 @@
       "price": 199,
       "description": "Speaker",
       "quantity": 2
-    },
-    {
-      "id": 5,
-      "title": "Sub (Gen 3)",
-      "img": "https://media.sonos.com//images/znqtjj88/production/dd84c5bf5558b003741f581041b88c01843fad31-2328x3076.png?w=1920&q=75&fit=clip&auto=format",
-      "price": 849,
-      "description": "Premium Wireless Subwoofer",
-      "quantity": 1
     }
   ]
 }
