@@ -20,5 +20,6 @@ function App() {
     </BrowserRouter>
   );
 }
+// МОЙ КОМЕНТ
 
 export default App;
